@@ -1,0 +1,11 @@
+//- Formulario preenchido com os dados atuais do cliente.
+form(action="/clientes/edit/" + client.id  method="POST")
+  div
+    label(for="nome") Nome:
+    input(type="text" id="nome" name="nome" placeholder="Digite seu nome" value=client.nome required)
+  
+  div
+    label(for="email") E-mail:
+    input(type="email" id="email" name="email" placeholder="Digite seu e-mail" value=client.email required)
+  
+  button(type="submit") Editar client

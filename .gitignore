@@ -1,0 +1,7 @@
+# Dependencias instaladas
+node_modules/
+
+# Configuracoes locais e segredos
+.env
+.env.*
+!.env.example

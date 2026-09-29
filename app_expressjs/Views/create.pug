@@ -1,0 +1,11 @@
+//- Formulario para cadastrar um cliente.
+form(action="/clientes/create" method="POST")
+  div
+    label(for="nome") Nome:
+    input(type="text" id="nome" name="nome" placeholder="Digite seu nome" required)
+  
+  div
+    label(for="email") E-mail:
+    input(type="email" id="email" name="email" placeholder="Digite seu e-mail" required)
+  
+  button(type="submit") Enviar

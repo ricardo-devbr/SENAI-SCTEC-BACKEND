@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Exercícios de JavaScript</h1>
+    </header>
+
+    <main>
+        <section class="exercicio" aria-labelledby="titulo-aprovacao">
+            <h2 id="titulo-aprovacao">Calculadora de aprovação</h2>
+            <label for="nomeAluno">Nome do aluno</label>
+            <input type="text" id="nomeAluno">
+            <label for="nota">Nota do aluno</label>
+            <input type="text" id="nota">
+            <button type="button" onclick="aprovacao()">Verificar aprovação</button>
+            <p>Situação: <span id="resultadoAprovacao"></span></p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-desconto">
+            <h2 id="titulo-desconto">Calculadora de desconto</h2>
+            <label for="preco">Preço do produto (R$)</label>
+            <input type="number" id="preco">
+            <label for="desconto">Desconto (%)</label>
+            <input type="number" id="desconto">
+            <button type="button" onclick="calcularDesconto()">Calcular desconto</button>
+            <p id="resultadoDesconto"></p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-elementos">
+            <h2 id="titulo-elementos">Manipulação de elementos</h2>
+            <button type="button" id="botaoMudaCor" onclick="trocarCor()">Mudar cores</button>
+            <button type="button" id="retonarcor" onclick="retornacor()">Restaurar cores</button>
+            <div class="amostras-cores">
+                <div id="div-1" class="divTrocaCor">Div 1</div>
+                <div id="div-2" class="divTrocaCor">Div 2</div>
+                <div id="div-3" class="divTrocaCor">Div 3</div>
+            </div>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-calculadora">
+            <h2 id="titulo-calculadora">Calculadora simples</h2>
+            <p>Operadores: +, -, * e /</p>
+            <div class="entradas-calculadora">
+                <input type="text" id="num1" placeholder="Primeiro número" aria-label="Primeiro número">
+                <input type="text" id="operador" placeholder="Operador" aria-label="Operador">
+                <input type="text" id="num2" placeholder="Segundo número" aria-label="Segundo número">
+            </div>
+            <button type="button" onclick="calcular()">Calcular</button>
+            <p id="resultado">Resultado:</p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-saudacao">
+            <h2 id="titulo-saudacao">Saudação em outro idioma</h2>
+            <label for="idioma">Escolha um idioma</label>
+            <select id="idioma">
+                <option value="pt">Português</option>
+                <option value="en">Inglês</option>
+                <option value="de">Alemão</option>
+                <option value="es">Espanhol</option>
+                <option value="ja">Japonês</option>
+                <option value="ko">Coreano</option>
+            </select>
+            <button type="button" onclick="saudar()">Saudar</button>
+            <p id="traducao"></p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-compras">
+            <h2 id="titulo-compras">Lista de compras</h2>
+            <ul id="lista">
+                <li>Arroz</li>
+            </ul>
+            <label for="item">Adicionar item</label>
+            <input type="text" id="item">
+            <button type="button" onclick="listaCompras()">Adicionar item</button>
+            <p id="confirmacao"></p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-carros">
+            <h2 id="titulo-carros">Lista de carros</h2>
+            <button type="button" onclick="listarCarros()">Listar carros</button>
+            <div id="conteudo"></div>
+            <p id="continuar">Deseja ver o próximo carro?</p>
+            <div id="botoes"></div>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-saudacao-personalizada">
+            <h2 id="titulo-saudacao-personalizada">Saudação personalizada</h2>
+            <label for="nomeSaudacao">Seu nome</label>
+            <input type="text" id="nomeSaudacao">
+            <label for="hora">Selecione a hora</label>
+            <select id="hora">
+                <option value="">Selecione</option>
+                <option value="7">Manhã (7h)</option>
+                <option value="12">Tarde (12h)</option>
+                <option value="19">Noite (19h)</option>
+            </select>
+            <button type="button" onclick="saudacaoPersonalizada()">Mostrar saudação</button>
+            <p id="resultadoSaudacao"></p>
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-background">
+            <h2 id="titulo-background">Cores do plano de fundo</h2>
+            <button type="button" id="azul">Azul</button>
+            <button type="button" id="verde">Verde</button>
+            <button type="button" id="vermelho">Vermelho</button>
+            <button type="button" id="resetar-cores">Resetar cores</button>
+            <label for="eventos">Passe o cursor sobre o campo</label>
+            <input type="text" id="eventos" placeholder="Interaja">
+        </section>
+
+        <section class="exercicio" aria-labelledby="titulo-pizzaria">
+            <h2 id="titulo-pizzaria">Pedido da pizzaria</h2>
+            <label for="pedido">Digite um número de pedido entre 1 e 4</label>
+            <input type="text" id="pedido">
+            <button type="button" onclick="clientePedido()" id="fazer-pedido">Fazer pedido</button>
+            <p id="exibirpedido"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

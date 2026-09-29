@@ -1,0 +1,34 @@
+body {
+    width: min(560px, calc(100% - 32px));
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.formulario {
+    display: flex;
+    gap: 8px;
+}
+
+.formulario input {
+    min-width: 0;
+    flex: 1;
+    padding: 8px;
+}
+
+.formulario button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#lista {
+    padding-left: 24px;
+}
+
+#lista li {
+    margin: 8px 0;
+}

@@ -1,0 +1,78 @@
+body {
+    width: min(760px, calc(100% - 32px));
+    margin: 32px auto;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.exercicio {
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.exercicio h2 {
+    margin: 0 0 14px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 8px;
+    font: inherit;
+}
+
+button {
+    margin: 8px 6px 0 0;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.amostras-cores,
+.entradas-calculadora {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.divTrocaCor {
+    display: grid;
+    width: 90px;
+    min-height: 56px;
+    border: 1px solid #ccc;
+    place-items: center;
+}
+
+.entradas-calculadora input {
+    min-width: 0;
+    flex: 1 1 140px;
+}
+
+#operador {
+    flex: 0 1 100px;
+}
+
+#lista {
+    padding-left: 24px;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 20px;
+    }
+}

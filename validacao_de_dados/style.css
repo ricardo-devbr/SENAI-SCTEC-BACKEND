@@ -1,0 +1,48 @@
+body {
+    width: min(560px, calc(100% - 32px));
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#senha-requisitos,
+#senha-status {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+#senha-requisitos {
+    color: #555;
+}
+
+#senha-status {
+    color: #b00020;
+}
+
+button {
+    margin-top: 16px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
